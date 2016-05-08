@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>sketchnstipple</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+    <description>Location to store uploaded image</description>
+    <param-name>file-upload</param-name>
+    <param-value>
+         I:\java projects\sketchnstipple\WebContent\img\profile\
+     </param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>loginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginServlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>registerServlet</servlet-name>
+    <servlet-class>registerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>registerServlet</servlet-name>
+    <url-pattern>/registerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>mailServlet</servlet-name>
+    <servlet-class>MailServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>mailServlet</servlet-name>
+    <url-pattern>/mailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>forgotServlet</servlet-name>
+    <servlet-class>forgotServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>forgotServlet</servlet-name>
+    <url-pattern>/forgotServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>qwerty</servlet-name>
+    <servlet-class>UploadServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>qwerty</servlet-name>
+    <url-pattern>/uploadServ</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>bidServlet</servlet-name>
+    <servlet-class>bidServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>bidServlet</servlet-name>
+    <url-pattern>/bidServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
